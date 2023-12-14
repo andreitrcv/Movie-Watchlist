@@ -2,7 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const movieController = require('../controllers/movieController');
-const authMiddleware = require('../middlewares/auth');
+const authMiddleware = require('../middlewares/auth'); // Adjusted require statement
 
 // Movie routes
 router.post('/movies', authMiddleware, movieController.addMovie);
